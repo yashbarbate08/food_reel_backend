@@ -14,7 +14,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
   cors({
-    origin: process.env.VITE_FRONTEND_URL || "http://localhost:5173", // use env variable first
+    origin: "https://food-reel-frontend.vercel.app" || "http://localhost:5173", // use env variable first
     credentials: true,
   })
 );
